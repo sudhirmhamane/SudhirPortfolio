@@ -1,0 +1,305 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1c;
+    color: #e0e0e0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-left {
+    font-size: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    font-size: 40px;
+}
+.navbar-right .img3{
+    font-size: 15px;
+}
+
+.navbar-right a {
+    margin-left: 15px;
+}
+
+.navbar-right img {
+    width: 30px;
+    height: 30px;
+}
+
+.profile-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 105px;
+}
+
+.profile-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #1e90ff;
+    margin-bottom: 10px;
+
+}
+.styled-hr {
+    border: none;
+    height: 2px;
+    background-color: #1e90ff;
+    margin: 20px 0;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Hover effect */
+.profile-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 40px 80px rgba(0, 255, 89, 0.2);
+    cursor: pointer;
+}
+
+main {
+    padding: 50px 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.about h2 {
+    margin-top: 50px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about p {
+    margin-top: 10px;
+    font-size: 26px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.about-heading {
+    background-color: #9822bf;
+    color: #fff;
+    padding: 5px 10px; 
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 10px; 
+}
+
+.skills h2{
+    margin-top: 60px;
+    font-size: 40px;
+}
+.skills p {
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-skills {
+    background-color: #9822bf;
+    color: #fff;
+    padding: 5px 10px; 
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 40px; 
+}
+.skills-software{
+    background-color: #fff;
+    color: #000;
+    padding: 5px 10px; 
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 26px;
+
+}
+
+.skills-core{
+    background-color: #fff;
+    color: #000;
+    padding: 5px 10px; 
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 26px;
+}
+.skills p  {
+    display: block; 
+    text-align: center;
+    width: fit-content;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+.skills p:hover {
+    background-color: #ffc400;
+    color: #000;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    border-bottom: #9822bf;
+}
+/* project section */
+.section-projects .projects-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project {
+    background-color: #e0cece;
+    border: 1px solid #ff0000;
+    color: #000;
+    border-radius: 5px;
+    padding: 20px;
+    width: 30%;
+    margin-bottom: 30px;
+}
+
+.project a{
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    list-style-type: none;
+}
+
+.project a:hover{
+    color: #ff0000;
+    font-size: 17px;
+}
+
+
+.projects-container {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.section-projects h2 {
+    background-color: #9822bf;
+    color: #fff;
+    padding: 5px 10px; 
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+/* project end */
+
+/* Style for the Certificates section */
+#certificates {
+    padding: 20px;
+    color: #ffffff;
+}
+
+#certificates h2 {
+  font-size: 30px;;
+  margin-bottom: 60px;
+}
+
+.certificate-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.certificate-list li {
+  margin-bottom: 20px;
+}
+
+.certificate-list a {
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.certificate-list a:hover {
+  /* text-decoration: underline; */
+  background-color: #04ff00;
+  color: #000000;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.certificate-list p {
+  font-size: 20px;
+  color: #ffffff;
+  padding: 30px;
+  margin-bottom: 60px;
+
+}
+
+.section-container h2{
+    background-color: #9822bf;
+    color: #fff;
+    padding: 5px 10px; 
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+/* certificate edit done */
+
+/* achievements */
+
+.achievements h2{
+    background-color: #9822bf;
+    color: #fff;
+    padding: 5px 10px; 
+    border-radius: 3px;
+    display: inline-block;
+}
+.achievements ul li{
+    list-style-type: none;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #ffc400;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    position: relative;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-right {
+        margin-top: 10px;
+    }
+}
