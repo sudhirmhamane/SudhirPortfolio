@@ -244,6 +244,10 @@ section {
     display: inline-block;
     margin-bottom: 40px;
 }
+
+.project i{
+    margin-left: 6px;
+}
 /* project end */
 
 /* Style for the Certificates section */
@@ -254,7 +258,7 @@ section {
 
 #certificates h2 {
   font-size: 30px;;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .certificate-list {
@@ -267,7 +271,7 @@ section {
 }
 
 .certificate-list a {
-  font-size: 24px;
+  font-size: 20px;
   color: #fff;
   text-decoration: none;
   background-color: #fff;
@@ -286,10 +290,10 @@ section {
 }
 
 .certificate-list p {
-  font-size: 20px;
+  font-size: 16px;
   color: #ffffff;
   padding: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 29px;
 
 }
 
@@ -302,37 +306,9 @@ section {
     margin-bottom: 40px;
 }
 
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    position: relative;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn:hover {
-    background-color: #555;
-  }
-  
-  .btn::after {
-    content: "";
-    position: absolute;
-    right: -15px;
-    top: 50%;
-    transform: translateY(-50%) rotate(45deg);
-    height: 10px;
-    border-right: 2px solid #fff;
-    border-top: 2px solid #fff;
-    transition: transform 0.3s ease;
-  }
-  
-  .btn:hover::after {
-    transform: translateY(-50%) rotate(45deg) translateX(5px);
-  }
-
+.certificate-list i{
+    font-size: 20px;
+}
 /* certificate edit done */
 
 /* achievements */
