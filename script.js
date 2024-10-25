@@ -18,3 +18,14 @@ document.addEventListener('DOMContentLoaded', () => {
     e.preventDefault(); // Prevent default anchor behavior
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
+
+
+  // Initialize visitor count from local storage or start from 1
+  let visitorCount = localStorage.getItem('visitorCount') || 0;
+  visitorCount++;
+  
+  // Save updated count to local storage
+  localStorage.setItem('visitorCount', visitorCount);
+
+  // Display the visitor count
+  document.getElementById('visitorCount').textContent = "Visitor Count: " + visitorCount;
