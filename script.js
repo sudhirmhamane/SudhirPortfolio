@@ -13,6 +13,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
+  topButton.addEventListener("click", function() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth" // Smooth scrolling effect
+    });
+  });
+
   /// Check if the user has already visited
   const hasVisited = localStorage.getItem('hasVisited');
 
