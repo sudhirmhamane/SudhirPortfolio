@@ -28,12 +28,6 @@ body {
     font-weight: 600; 
   }
 
-  .navbar-left:hover{
-    cursor: pointer;
-    color: #aeff00;
-    text-shadow: 0 0 10px rgba(242, 255, 1, 0.5);
-  }  
-
 .navbar-right {
     display: flex;
     align-items: center;
@@ -202,7 +196,9 @@ section {
     0 0 20px rgba(0, 255, 255, 0.8);
 }
 
-
+.core-pro{
+    text-align: start;
+}
 .project{
     text-align: center;
     background-color: rgba(255, 255, 255, 0.9);
@@ -222,6 +218,12 @@ section {
     0 0 40px rgb(247, 226, 0);  
 }
 
+.logo{
+    width: 300px;
+    object-fit: contain;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(2, 2, 2, 0.5);
+}
 
 /* project section */
 .section-projects .projects-container {
@@ -508,9 +510,16 @@ footer p {
         flex-wrap: wrap;
     }
 
+    .logo{
+        width: 240px;
+        object-fit: contain;
+        border-radius: 6px;
+        box-shadow: 0 2px 4px rgba(2, 2, 2, 0.5);
+    }
+
     .project {
-        width: 70%;
-        height: 290px;
+        width: 80%;
+        height: 400px;
         margin: 20px;
 
     }
