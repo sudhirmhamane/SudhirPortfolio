@@ -13,19 +13,22 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-  // When the user clicks the button, scroll to the top of the document
-  topButton.addEventListener("click", function(e) {
-    e.preventDefault(); // Prevent default anchor behavior
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
+  /// Check if the user has already visited
+  const hasVisited = localStorage.getItem('hasVisited');
 
+  if (!hasVisited) {
+      // If no visit record, increase count and mark as visited
+      let visitorCount = localStorage.getItem('visitorCount') || 0;
+      visitorCount++;
 
-  // Initialize visitor count from local storage or start from 1
-  let visitorCount = localStorage.getItem('visitorCount') || 0;
-  visitorCount++;
-  
-  // Save updated count to local storage
-  localStorage.setItem('visitorCount', visitorCount);
+      // Update local storage
+      localStorage.setItem('visitorCount', visitorCount);
+      localStorage.setItem('hasVisited', 'true'); // Mark as visited
 
-  // Display the visitor count
-  document.getElementById('visitorCount').textContent = "Visitor Count: " + visitorCount;
+      // Display the updated count
+      document.getElementById('visitorCount').textContent = "Visitor Count: " + visitorCount;
+  } else {
+      // If already visited, just display the current count without incrementing
+      const visitorCount = localStorage.getItem('visitorCount');
+      document.getElementById('visitorCount').textContent = "Visitor Count: " + visitorCount;
+  }
