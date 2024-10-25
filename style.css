@@ -10,7 +10,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #0A0A23;
+    background-color: rgba(255, 255, 255, 1);
     padding: 10px 20px;
     position: fixed;
     width: 100%;
@@ -22,7 +22,7 @@ body {
     align-items: center;
     padding: 10px 15px; 
     border-radius: 5px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 30px;
     margin: 0; 
     font-weight: 600; 
@@ -46,8 +46,6 @@ body {
 
 .navbar-right a {
     margin-left: 15px;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .navbar-right img {
@@ -83,8 +81,7 @@ body {
     object-fit: cover;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 6px rgba(254, 254, 254, 0.7), 
-    0 0 12px rgba(255, 255, 255, 0.9); 
-    transform: scale(1.1);
+    0 0 12px rgba(255, 255, 255, 0.9);
     cursor: pointer;
 }
 .styled-hr {
@@ -98,7 +95,7 @@ body {
 }
 
 .profile-img:hover {
-    transition: background-color 0.2s ease;
+    transform: scale(1.05);
     cursor: pointer;
     box-shadow: 0 4px 20px rgba(0, 191, 255, 0.8), 
     0 0 40px rgba(0, 191, 255, 1);
@@ -204,6 +201,28 @@ section {
     box-shadow: 0 4px 10px rgba(0, 255, 255, 0.7),
     0 0 20px rgba(0, 255, 255, 0.8);
 }
+
+
+.project{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 20px solid black;
+    max-width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(255, 50, 58, 0.9);
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(241, 209, 0, 0.8), 
+    0 0 40px rgb(247, 226, 0);  
+}
+
+
 /* project section */
 .section-projects .projects-container {
     display: flex;
@@ -211,15 +230,6 @@ section {
     flex-wrap: wrap;
 }
 
-.project {
-    background-color: #ffffff;
-    border: 2px solid #f10000;
-    color: #000000;
-    border-radius: 5px;
-    padding: 20px;
-    width: 25%;
-    margin-bottom: 30px;
-}
 .project a{
     display: inline-flex;
     justify-content: space-evenly;
@@ -416,7 +426,7 @@ footer p {
 
 /* Responsive Styles for Smaller Devices */
   
-  @media (max-width: 360px) {
+  @media (max-width: 340px) {
     .top-button {
       bottom: 10px;
       right: 5px;
@@ -425,13 +435,14 @@ footer p {
     }
     .top-button .arrow {
         font-size: 12px;
-      }
+    }
   }
 
 @media (max-width: 600px) {
     .navbar {
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
+        flex-wrap: wrap;
     }
 
     .navbar-right {
@@ -464,12 +475,12 @@ footer p {
 
 @media (max-width: 480px) {
     .profile-section {
-        margin-top: 100px;
+        margin-top: 80px;
     }
 
     .profile-img {
-        width: 160px;
-        height: 160px;
+        width: 170px;
+        height: 170px;
         transform: scale(1);
     }
 
@@ -477,25 +488,31 @@ footer p {
         padding: 10px 15px;
     }
 
-    .navbar .navbar-right{
-        font-size: 16px;
+    .navbar .navbar-right a{
+        font-size: 10px;
+    }
+    .navbar-right a img{
+        margin-top: 13px;
+        width: 20px; /* Set the desired width */
+        height: auto;
     }
 
     .navbar .navbar-left{
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .navbar-right a {
         margin-top: -10px;
-        margin-bottom: -5px;
         font-size: 15px;
         display: flex;
         flex-wrap: wrap;
     }
 
     .project {
-        width: 60%;
-        height: 220px;
+        width: 70%;
+        height: 290px;
+        margin: 20px;
+
     }
 
     .shop-a{
@@ -527,13 +544,13 @@ footer p {
         font-size: 20px;
     }
     .project h3{
-        font-size: 15px;
+        font-size: 18px;
     }
     .project p{
-        font-size: 13px;
+        font-size: 16px;
     }
     .project a{
-        font-size: 10px;
+        font-size: 14px;
     }
 
     #certificates h2{
