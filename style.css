@@ -412,19 +412,8 @@ footer p {
 }
 
 /* Responsive Styles for Smaller Devices */
-@media (max-width: 600px) {
-    .top-button {
-      bottom: 10px;
-      right: 10px;
-      padding: 7px 14px;
-      font-size: 10px;
-    }
-    .top-button .arrow {
-        font-size: 12px;
-      }
-  }
   
-  @media (max-width: 400px) {
+  @media (max-width: 360px) {
     .top-button {
       bottom: 10px;
       right: 5px;
@@ -443,6 +432,127 @@ footer p {
     }
 
     .navbar-right {
-        margin-top: 10px;
+        margin-top: 6px;
+    }
+
+    .top-button {
+        bottom: 20px;
+        right: 10px;
+        padding: 7px 14px;
+        font-size: 10px;
+    }
+    .top-button .arrow {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .profile-section {
+        margin-top: 80px;
+    }
+
+    .profile-img {
+        width: 180px;
+        height: 180px;
+        transform: scale(1); /* Adjust scale for smaller devices */
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-section {
+        margin-top: 100px;
+    }
+
+    .profile-img {
+        width: 160px;
+        height: 160px;
+        transform: scale(1);
+    }
+
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .navbar .navbar-right{
+        font-size: 10px;
+    }
+
+    .navbar .navbar-left{
+        font-size: 20px;
+    }
+
+    .navbar-right a {
+        margin-top: -10px;
+        margin-bottom: -5px;
+        font-size: 5px;
+    }
+    .about h2{
+        font-size: 20px;
+    }
+    .about p {
+        font-size: 15px;
+    }
+    .about-skills{
+        font-size: 25px;
+        margin-bottom: -20px;
+    }
+
+    .skills-software{
+        font-size: 20px;
+    }
+    .skills-core{
+        font-size: 20px;
+    }
+    .skills p{
+        font-size: 16px;
+    }
+
+    .section-projects h2{
+        font-size: 20px;
+    }
+    .project h3{
+        font-size: 15px;
+    }
+    .project p{
+        font-size: 13px;
+    }
+    .project a{
+        font-size: 10px;
+    }
+
+    #certificates h2{
+        font-size: 20px;
+    }
+    .certificate-list a{
+        font-size: 15px;
+    }
+    .cpara {
+        font-size: 10px;
+    }
+
+    .achievements h2{
+        font-size: 20px;
+    }
+    .achievements ul li{
+        font-size: 16px;
+    }
+    .contact-section h2{
+        font-size: 22px;
+    }
+    .contact-section p{
+        font-size: 16px;
+    }
+    .contact-section a{
+        font-size: 12px;
+    }
+    #visitorCount{
+        font-size: 15px;
+    }
+    footer{
+        padding: 12px;
+    }
+    footer p{
+        font-size: 14px;
     }
 }
