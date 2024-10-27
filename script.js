@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
  const topButton = document.getElementById("backToTop");
 
   window.onscroll = function() {
-    if (document.body.scrollTop > 2600 || document.documentElement.scrollTop > 2600) {
+    if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
       topButton.style.display = "block";
     } else {
       topButton.style.display = "none";
@@ -19,23 +19,3 @@ document.addEventListener('DOMContentLoaded', () => {
         behavior: "smooth" // Smooth scrolling effect
     });
   });
-
-  /// Check if the user has already visited
-  const hasVisited = localStorage.getItem('hasVisited');
-
-  if (!hasVisited) {
-      // If no visit record, increase count and mark as visited
-      let visitorCount = localStorage.getItem('visitorCount') || 0;
-      visitorCount++;
-
-      // Update local storage
-      localStorage.setItem('visitorCount', visitorCount);
-      localStorage.setItem('hasVisited', 'true'); // Mark as visited
-
-      // Display the updated count
-      document.getElementById('visitorCount').textContent = "Visitor Count: " + visitorCount;
-  } else {
-      // If already visited, just display the current count without incrementing
-      const visitorCount = localStorage.getItem('visitorCount');
-      document.getElementById('visitorCount').textContent = "Visitor Count: " + visitorCount;
-  }
