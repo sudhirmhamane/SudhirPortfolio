@@ -47,6 +47,63 @@ body {
     height: 30px;
 }
 
+/* intro */
+
+/* Intro Section Styling */
+.intro-section {
+    color: #f1c40f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 77vh;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.intro-content {
+    max-width: 700px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.intro-section h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #f39c12;
+}
+
+.intro-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #f1f1f1;
+}
+
+.intro-button {
+    background-color: #f39c12;
+    color: #000000;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.intro-button:hover {
+    background-color: #e67e22;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 2;
+        transform: translateY(0);
+    }
+}
+
+
 .profile-section {
     display: flex;
     justify-content: center;
@@ -203,14 +260,14 @@ section {
   gap: 20px;
   align-items: center;
   padding: 30px;
-  color: #fff;
+  color: #000000;
   margin-bottom: 30px;
   margin-top: 30px;
   align-items: stretch
 }
 
 .skill-category {
-  background-color: #1e1e1e;
+  background-color: #ffffff;
   box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
   padding: 20px;
   border-radius: 8px;
@@ -225,11 +282,11 @@ section {
 
 .skill-category h2 {
   margin-bottom: 15px;
-  font-size: 1.5em;
+  font-size: 1.4em;
   text-align: center;
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 2px solid #000000;
   padding-bottom: 10px;
-  color: #ffdf00;
+  color: #000000;
 }
 
 .skill {
@@ -241,6 +298,12 @@ section {
   margin-bottom: 5px;
   font-weight: bold;
 }
+
+.myskills {
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
 /*  the skills section ends */
 
 
@@ -249,7 +312,7 @@ section {
 /* Software Projects Section Styles */
 
 .section-projects {
-  color: #ffffff;
+  color: #000000;
   padding: 40px 20px;
   text-align: center;
 }
@@ -268,9 +331,9 @@ section {
 }
 
 .project {
-  background-color: #1e1e1e;
+  background-color: #ffffff;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 8px rgba(0, 196, 222, 0.3);
   max-width: 300px;
   padding: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -289,13 +352,13 @@ section {
 }
 
 .project h3 {
-  color: #ffdf00;
+  color: #000000;
   font-size: 1.4em;
   margin: 15px 0 10px;
 }
 
 .paraedit {
-  color: #cfcfcf;
+  color: #171414;
   font-size: 0.95em;
   line-height: 1.4;
   margin-bottom: 15px;
@@ -303,7 +366,7 @@ section {
 
 .project a {
   display: inline-block;
-  color: #fff;
+  color: #000000;
   font-weight: bold;
   text-decoration: none;
   margin-top: 10px;
@@ -318,7 +381,7 @@ section {
 /* Certificates Section Styles */
 
 #certificates {
-  color: #ffffff;
+  color: #000000;
   padding: 20px 10px;
   text-align: start;
 }
@@ -340,13 +403,13 @@ section {
 }
 
 .certificate-div {
-  background-color: #1e1e1e;
+  background-color: #ffffff;
   width: 100%;
   max-width: 400px;
   height: min-content;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(252, 252, 251, 0.3);
+  box-shadow: 0 4px 8px rgba(5, 217, 199, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -356,7 +419,7 @@ section {
 }
 
 .certificate-div a {
-  color: #ffdf00;
+  color: #000000;
   font-weight: bold;
   text-decoration: none;
   margin-bottom: 10px;
@@ -368,7 +431,7 @@ section {
   
 .cpara {
   font-size: 0.9em;
-  color: #cfcfcf;
+  color: #201a1a;
   line-height: 1.4;
 }
 
@@ -379,7 +442,7 @@ section {
 /* achievements  start */
 
 #myAchievements {
-  color: #ffffff;
+  color: #000000;
   padding: 40px 20px;
   text-align: center;
 }
@@ -403,15 +466,14 @@ section {
   margin: 10px 0;
   padding: 10px;
   border-left: 4px solid #ffdf00; 
-  border-right: 4px solid #ffdf00; 
-  background-color: #1e1e1e;
-  box-shadow: 0 4px 8px rgba(252, 252, 251, 0.3);
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(6, 166, 187, 0.3);
   border-radius: 4px;
   margin-bottom: 15px;
 }
 
 #myAchievements ul li b {
-  color: #ffdf00;
+  color: #000000;
 }
   
 
@@ -521,6 +583,7 @@ footer {
     .top-button .arrow {
         font-size: 12px;
     }
+
   }
 
 @media (max-width: 600px) {
@@ -599,9 +662,6 @@ footer {
 }
 
 @media (max-width: 480px) {
-    .profile-section {
-        margin-top: 80px;
-    }
 
     .profile-img {
         width: 170px;
@@ -638,6 +698,18 @@ footer {
         object-fit: contain;
         border-radius: 6px;
         box-shadow: 0 2px 4px rgba(2, 2, 2, 0.5);
+    }
+
+    .intro-section h1 {
+        font-size: 26px;
+    }
+
+    .intro-section p {
+        font-size: 15px;
+    }
+
+    .intro-button {
+        padding: 6px 12px;
     }
 
     .skills-container {
