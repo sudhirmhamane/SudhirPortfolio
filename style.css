@@ -256,7 +256,7 @@ body {
 @media (max-width: 768px) {
   .skills h2 {
     font-size: 24px;
-    margin-bottom: 30px;
+    margin-bottom: 30px;margin-top: 10px;
   }
 
   .skills-grid {
