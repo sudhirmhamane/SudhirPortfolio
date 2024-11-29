@@ -3,266 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Portfolio</title>
+    <!-- Add your favicon here -->
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <title>Sudhir's Portfolio</title>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navbar-left">Sudhir's Portfolio</div>
-        <div class="navbar-right">
+    <!-- Navbar -->
+    <header class="navbar">
+        <nav class="container">
+            <div class="logo">Sudhir's Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
 
-            <a title="LinkedIn" href="https://www.linkedin.com/in/sudhirmhamane/" target="_blank"><img src="./img/linkedin.png" alt="LinkedIn"></a>
-
-            <a title="GitHub" href="https://github.com/" target="_blank"><img src="./img/github.png" alt="GitHub"></a>
-
-            <a title="Unstop" class="img3" href="https://unstop.com/u/SudhirM_45" target="_blank"><img src="./img/unstopNew.png" alt="Unstop"></a>
-
-            <a title="LeetCode" class="img4" href="https://leetcode.com/u/sudhirmhamane/" target="_blank"><img src="./img/leetcodenew.png" alt="LeetCode"></a>
-
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+          <div class="hero-image">
+            <img src="newProfilePic.jpg" alt="Sudhir Mhamane" />
+          </div>
+          <div class="hero-content">
+            <h1>Hi, I'm <span> Sudhir Mhamane</span></h1>
+            <p>
+                a dedicated and skilled web developer with expertise in data structure and algorithm.Passionate about creating innovative projects.Seeking opportunities to utilize strong technical skills and creativity in a collaborative team environment.
+            </p>
+          </div>
         </div>
-    </nav>
+      </section>
+      <hr class="styled-hr">
 
-    <main class="main-class">
-
-      <!-- Intro Section -->
-        <section id="intro" class="intro-section">
-          <div class="intro-content">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Hello, I'm Sudhir Mhamane – an aspiring software developer and tech enthusiast. Explore my projects, skills, and achievements!</p>
-            <a href="#projects" class="intro-button">View My Work</a>
-          </div>
-        </section>
-
-
-        <section class="profile-section">
-            <img title="Sudhir Mhamane" src="./img/newProfilePic.jpg" alt="Profile Image" class="profile-img">
-        </section>
-        
-    
-        <section class="about">
-                <h2><span class="about-heading">About Me</span></h2>
-                <p>Hi, I'm Sudhir Mhamane, a dedicated and skilled web developer with expertise in data structure and algorithm.Passionate about creating innovative projects.Seeking opportunities to utilize strong technical skills and creativity in a collaborative team environment.</p>
-                <hr class="styled-hr">
-        </section>
-
-        <section class="allSkills">
-          <h2 class="myskills">My Skills</h2>
-          <div class="skills-section">
-            <div class="skill-category">
-              <h2>Software Skills</h2>
-
-              <div class="skill">
-                <span>Java Programming</span>
-              </div>
-              <div class="skill">
-                <span>Data Structures</span>
-              </div>
-              <div class="skill">
-                <span>Web Development</span>
-              </div>
-              <div class="skill">
-                <span>Operating System</span>
-              </div>
-              <div class="skill">
-                <span>JavaScript</span>
-              </div>
-              <div class="skill">
-                <span>HTML/CSS</span>
-              </div>
-
-              <!-- Add more software skills here -->
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h4>JAVA</h4>
+                    <img src="./img/java.svg" alt="html logo">
+                    
+                </div>
+                <div class="skill-card">
+                    <h4>HTML</h4>
+                    <img src="./img/html.svg" alt="html logo">
+                </div>
+                <div class="skill-card">
+                    <h4>CSS</h4>
+                    <img src="./img/css.svg" alt="html logo">
+                </div>
+                <div class="skill-card">
+                    <h4>JAVASCRIPT</h4>
+                    <img src="./img/javascript.svg" alt="html logo">
+                </div>
+                <div class="skill-card">
+                    <h4>React</h4>
+                    <img src="./img/react-logo-png_seeklogo-273845.png" alt="html logo">
+                </div>
+                <div class="skill-card">
+                    <h4>Node Js</h4>
+                    <img src="./img/node-removebg-preview.png" alt="html logo">
+                </div>
+                <div class="skill-card">
+                    <h4>MySQL</h4>
+                    <img src="./img/mysql-svgrepo-com.svg" alt="html logo">
+                </div>
             </div>
-        
-            <div class="skill-category">
-              <h2>Core Skills</h2>
-
-              <div class="skill">
-                <span>Electrical Engineering</span>
-              </div>
-              <div class="skill">
-                <span>microprocessor(MPU)</span>
-              </div>
-              <div class="skill">
-                <span>microcontroller(MCU)</span>
-              </div>
-              <div class="skill">
-                <span>Basic of Electrical Vehicals</span>
-              </div>
-              <div class="skill">
-                <span>Power System</span>
-              </div>
-
-              <div class="skill">
-                <span>Circuit Design</span>
-              </div>
-
-              <!-- Add more core skills here -->
-            </div>
-        
-            <div class="skill-category">
-              <h2>Soft Skills</h2>
-
-              <div class="skill">
-                <span>Communication</span>
-              </div>
-              <div class="skill">
-                <span>Adaptability</span>
-              </div>
-              <div class="skill">
-                <span>Problem-Solving</span>
-              </div>
-              <div class="skill">
-                <span>Time Management</span>
-              </div>
-
-              <div class="skill">
-                <span>Teamwork</span>
-              </div>
-
-              <!-- Add more soft skills here -->
-            </div>
-          </div>
-        </section>
-        
+        </div>
         <hr class="styled-hr">
+    </section>
 
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
 
-        <!-- Projects Section Software-->
-        <section id="myProjects" class="section-projects">
-            <h2>Software Projects</h2>
-
-            <div class="projects-container">
-
-
-                <div class="project">
-                  <img src="./img/recipe img.png" class="logo" alt="weather-app">
-                  <h3>RECIPE FINDER</h3>
+                <div class="project-card">
+                    <img src="./img/recipe img.png" alt="Project 1">
+                    <h3>RECIPE FINDER</h3>
                   <p class="paraedit">Recipe app using JavaScript integrated API's.</p>
-                  <a href="https://recipefinder-app.vercel.app/">View<i class="fa-solid fa-arrow-up-right-from-square"></i></a> <br>
+                  <a href="https://recipefinder-app.vercel.app/">View<i class="fa-solid fa-arrow-up-right-from-square"></i></a> 
                   <a  href="https://github.com/sudhirmhamane/Recipe-Finder-App">GitHub <i  class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
 
-                <div class="project">
-                  <img src="./img/tumbnail2.png" class="logo" alt="sudhir-portfolio">
-                  <h3>PORTFOLIO WEBPAGE</h3>
+                <div class="project-card">
+                    <img src="./img/Screenshot 2024-11-27 195206.png" alt="Project 2">
+                    <h3>PORTFOLIO WEBPAGE</h3>
                   <p class="paraedit">A simple Portfolio Webpage for showcasing work.</p>
-                  <a href="https://sudhirportfolio.vercel.app/">View<i class="fa-solid fa-arrow-up-right-from-square"></i></a> <br>
+                  <a href="https://sudhirportfolio.vercel.app/">View<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                   <a href="https://github.com/sudhirmhamane/SudhirPortfolio">GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
 
-                <div class="project">
-                    <img src="./img/tumbnail1.png" class="logo" alt="weather-app">
+                <div class="project-card">
+                    <img src="./img/tumbnail1.png" alt="Project 2">
                     <h3>WEATHER FORECAST</h3>
                     <p class="paraedit">Weather app using JavaScript integrated API's.</p>
-                    <a href="https://forecastweather.vercel.app/">View<i class="fa-solid fa-arrow-up-right-from-square"></i></a> <br>
+                    <a href="https://forecastweather.vercel.app/">View<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     <a  href="https://github.com/sudhirmhamane/WeatherForecast">GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
-
-                <!-- <div class="project">
-                    <img src="./img/tumbnail3.png" class="logo" alt="shopping-img">
-                    <h3>SHOPPING WEBPAGE</h3>
-                    <p class="paraedit">Responsive webpage for showcasing products.</p>
-                    <a href="https://filzomart.vercel.app/">View<i class="fa-solid fa-arrow-up-right-from-square"></i></a> <br>
-                    <a href="https://github.com/sudhirmhamane/FilzoMart" class="shop-a">GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div> -->
             </div>
-        </section>
-
+        </div>
         <hr class="styled-hr">
+    </section>
 
-        <!-- Projects Section Core-->
-        <section class="section-projects">
-            <h2>Core Projects</h2>
-            <div class="projects-container">
-
-                <div class="project">
-                    <h3>WATER LEVEL INDICATOR</h3>
-                    <p class="core-pro">Created a water level indicator system that utilizes sensors to accurately detect and display the water level in a tank.</p>
-                    <p class="core-pro">providing real-time monitoring to prevent overflow and ensure optimal water conservation.</p>
-                    <!-- <a href="https://github.com/sudhirmhamane/water-level-indicator">View on GitHub</a> -->
-                </div>
-
-                <div class="project">
-                    <h3>ARDUINO LCD INTERFACING</h3>
-                    <p class="core-pro">Developed an Arduino-based project to interface with an LCD display, allowing for real-time data visualization and user interaction.</p>
-                    <p class="core-pro">The system dynamically updates information, providing an intuitive interface for monitoring various parameters.</p>
-                    <!-- <a href="https://github.com/sudhirmhamane/project-management-system">View on GitHub</a> -->
-                </div>
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates">
+    <div class="container">
+        <h2>Certificates</h2>
+        <div class="certificate-grid">
+            <div class="certificate-card">
+                <a title="Go to Certificate" target="_blank" href="https://data-flair.training/verify/7C939D9FED-7A5D9C7745-736D270F19/">
+                    Web Development <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <p class="cpara">Gained practical experience in building responsive websites using HTML, CSS, and JavaScript fundamentals.</p>
             </div>
-        </section>
-        <hr class="styled-hr">
-
-        <!-- Certificates Section -->
-        <section id="certificates" class="section-container">
-            <h2>Certificates</h2>
-            <div class="certificate-list">
-
-                <div class="certificate-div">
-                    <a title="GO to Certificate" target="_blank" href="https://data-flair.training/verify/7C939D9FED-7A5D9C7745-736D270F19/" >Web Development <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    <p class="cpara">Gained practical experience in building responsive websites using HTML, CSS, and JavaScript fundamentals.</p>
-                </div>
-
-                <div class="certificate-div">
-                    <a title="GO to Certificate" target="_blank" href="https://www.udemy.com/certificate/UC-4708d9ee-637b-4bec-8272-0cfb10e1e3a7/" >Core Java by Udemy <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <div class="certificate-card">
+                <a title="GO to Certificate" target="_blank" href="https://www.udemy.com/certificate/UC-4708d9ee-637b-4bec-8272-0cfb10e1e3a7/" >Core Java by Udemy <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     <p class="cpara">Acquired foundational Java programming skills from the basic, including syntax and object-oriented principles.</p>
-                </div>
-
-                <div class="certificate-div">
-                    <a title="GO to Certificate" target="_blank" href="https://drive.google.com/file/d/17mOaHDz069t3JTUAo5kZZL3wCi6Ndv_M/view?usp=sharing">TCS iON Soft Skills <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    <p class="cpara">Developed essential career skills, including resume building, interview preparation, and professional networking.</p>
-                </div>
-
-                <div class="certificate-div">
-                    <a title="GO to Certificate" target="_blank" href="https://drive.google.com/file/d/1gJSIQtUEGOYuqJhFjWkQQyNbyQUgssXg/view?usp=drivesdk">15 day Internship <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    <p class="cpara">Completed a 15-day internship at LHP Motor   gaining hands-on experience in motor technology and learning about key industry practices.</p>
-                </div>
-
-                <div class="certificate-div">
-                    <a title="GO to Certificate" href="https://www.mygreatlearning.com/certificate/TWZZZHHO"target="_blank">Intro to Electric Vehicles <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    <p class="cpara">Demonstrated knowledge of electric vehicle technology, benefits, and their role in promoting sustainable transportation and reducing pollution.</p>
-                </div>
-                
-
-                <div class="certificate-div">
-                    <a title="GO to Certificate" href="https://unstop.com/certificate-preview/b713db2a-792c-43c7-a247-e4b374444467"target="_blank" >Unstop Contest <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    <p class="cpara">Received a Certificate of Participation in the  olonite Winter Internship Contest 2024, showcasing my skills and interest in internship opportunities.</p>
-                </div>
-                    
-                <div class="certificate-div">
-                    <a title="GO to Certificate" href="https://drive.google.com/file/d/12EwE7rc_YJCDyPghkJAZ2m_qS3TGl7fL/view?usp=sharing"target="_blank" >Internship on Corporate Skills <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    <p class="cpara">In One Week Internship Gained practical insights into corporate communication,teamwork, and professional etiquette through hands-on training.</p>
-                </div>
-               
             </div>
-        </section>
-        <hr class="styled-hr">
 
-        <section id="myAchievements" class="achievements">
-            <h2>Achievements</h2>
-            <ul>
-                <li>Selected as the <b style="color: rgb(255, 0, 0);">Training and Placement Coordinator.</b></li>
-                <li> <b style="color: rgb(255, 0, 0);">Winner</b> of Smash-2024 Inter-college <b style="color: rgb(255, 0, 0);">Cricket Tournament.</b></li>
-                <li>Completed multiple <b style="color: rgb(255, 0, 0);">coding</b> challenges on <b style="color: rgb(255, 0, 0);">LeetCode.</b></li>
+            <div class="certificate-card">
+                <a title="GO to Certificate" target="_blank" href="https://drive.google.com/file/d/1q-Rdr2svXUBVLyAfrGXQ1ZoKy121AzCz/view?usp=drivesdk" >Operating System By NPTEL <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <p class="cpara">Gained foundational knowledge of operating systems, including process management, memory management, and scheduling techniques.</p>
+            </div>
 
-            </ul>
-        </section>
-        <hr class="styled-hr">
+
+            <div class="certificate-card">
+                <a title="GO to Certificate" href="https://drive.google.com/file/d/12EwE7rc_YJCDyPghkJAZ2m_qS3TGl7fL/view?usp=sharing"target="_blank" >Internship on Corporate Skills <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <p class="cpara">In One Week Internship Gained practical insights into corporate communication,teamwork, and professional etiquette.</p>
+            </div>
+
+            <div class="certificate-card">
+                <a title="GO to Certificate" target="_blank" href="https://drive.google.com/file/d/17mOaHDz069t3JTUAo5kZZL3wCi6Ndv_M/view?usp=sharing">TCS iON Soft Skills <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <p class="cpara">Developed essential career skills, including resume building, interview preparation, and professional networking.</p>
+            </div>
+
+            <div class="certificate-card">
+                <a title="GO to Certificate" href="https://www.mygreatlearning.com/certificate/TWZZZHHO"target="_blank">Intro to Electric Vehicles <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <p class="cpara">Demonstrated knowledge of electric vehicle technology, benefits, and their role in promoting sustainable transportation and reducing pollution.</p>
+            </div>
+<!-- 
+            <div class="certificate-card">
+                <a title="GO to Certificate" target="_blank" href="https://drive.google.com/file/d/1gJSIQtUEGOYuqJhFjWkQQyNbyQUgssXg/view?usp=drivesdk">15 day Internship <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <p class="cpara">Completed a 15-day internship at LHP Motor gaining hands-on experience in motor technology and learning about key industry practices.</p>
+            </div> -->
+        </div>
+    </div>
+    <hr class="styled-hr">
+    </section>
+
+
+    <!-- Achievements/Extracurriculars Section -->
+    <section id="achievements" class="achievements">
+    <div class="container">
+        <h2>Achievements</h2>
+        <ul class="achievements-list">
+            <li>Selected as the Training and Placement Coordinator.</li>
+            <li>Training and Placement Coordinator of Electrical Engineering Department</li>
+            <li>Completed TCS iON Career Edge - Young Professional Course</li>
+        </ul>
+    </div>
+    <hr class="styled-hr">
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
         <div class="contact-section">
             <h2>Contact Me</h2>
             <p>If you'd like to get in touch, send me an email!</p>
-            <a href="mailto:your-email@gmail.com" class="contact-btn">Gmail Me</a>
+            <a href="mailto:sudhirmhamane908@gmail.com" class="contact-btn">Gmail Me</a>
         </div>
+    </section>
 
-        <button id="backToTop" class="top-button">
-            <i class="fas fa-arrow-up"></i> TOP
-        </button>
-    </main>
-    <footer>
-        <p><i class="fa-solid fa-heart"></i> Sudhir Mhamane.</p>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>© Sudhir Mhamane</p>
+            <ul class="social-media">
+                <a title="LinkedIn" href="https://www.linkedin.com/in/sudhirmhamane/" target="_blank"><img src="./img/linkedin.png" alt="LinkedIn"></a>
+
+                <a title="GitHub" href="https://github.com/" target="_blank"><img src="./img/github.png" alt="GitHub"></a>
+
+                <a title="Unstop" class="img3" href="https://unstop.com/u/SudhirM_45" target="_blank"><img src="./img/unstopNew.png" alt="Unstop"></a>
+            </ul>
+        </div>
+        <button id="backToTop">↑ Back to Top</button>
     </footer>
-    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/4cd655302c.js" crossorigin="anonymous"></script>
 </body>
 </html>
+

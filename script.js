@@ -1,43 +1,97 @@
-document.addEventListener('DOMContentLoaded', () => {
-    console.log("Welcome to Sudhir's Portfolio!");
+// Select elements for interactivity
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+const backToTop = document.getElementById('backToTop');
+
+// Navbar toggling on small devices
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
 });
 
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
 
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop - 70, // Adjust for fixed navbar
+                behavior: 'smooth',
+            });
 
- const topButton = document.getElementById("backToTop");
+            // Close the navbar on small screens
+            if (navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
+            }
+        }
+    });
+});
 
-  window.onscroll = function() {
-    if (document.body.scrollTop > 2200 || document.documentElement.scrollTop > 2200) {
-      topButton.style.display = "block";
+// Back-to-top button visibility
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        backToTop.style.display = 'block';
     } else {
-      topButton.style.display = "none";
+        backToTop.style.display = 'none';
     }
-  };
+});
 
-  topButton.addEventListener("click", function() {
+// Scroll to top when the button is clicked
+backToTop.addEventListener('click', () => {
     window.scrollTo({
         top: 0,
-        behavior: "smooth" // Smooth scrolling effect
-    });
-  });
-
-  document.querySelector('.intro-button').addEventListener('click', function(event) {
-    event.preventDefault();
-    const profileSection = document.querySelector('.profile-section');
-    
-    // Responsive offset based on screen width
-    let offset;
-    if (window.innerWidth <= 480) {
-        offset = -120; // Small screen offset
-    } else if (window.innerWidth <= 768) {
-        offset = -40; // Tablet offset
-    } else {
-        offset = -160; // Desktop offset
-    }
-
-    window.scrollTo({
-        top: profileSection.offsetTop + offset,
-        behavior: 'smooth'
+        behavior: 'smooth',
     });
 });
 
+// Modal functionality for certificates
+function openModal(certId) {
+    const modal = document.createElement('div');
+    modal.classList.add('modal');
+    modal.innerHTML = `
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <img src="${certId}.jpg" alt="Certificate ${certId}">
+        </div>
+    `;
+
+    document.body.appendChild(modal);
+
+    const closeBtn = modal.querySelector('.close-btn');
+    closeBtn.addEventListener('click', () => modal.remove());
+
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) modal.remove();
+    });
+}
+
+// Form validation
+const contactForm = document.getElementById('contactForm');
+contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    if (!name || !email || !message) {
+        alert('Please fill in all fields.');
+        return;
+    }
+
+    if (!validateEmail(email)) {
+        alert('Please enter a valid email address.');
+        return;
+    }
+
+    alert('Message sent successfully!');
+    contactForm.reset();
+});
+
+// Email validation function
+function validateEmail(email) {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+}
