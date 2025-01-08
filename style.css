@@ -1,9 +1,8 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-    
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -65,9 +64,9 @@ body {
 }
 
 .navbar .hamburger span {
-    width: 25px;
-    height: 3px;
-    background: #fff;
+  width: 25px;
+  height: 3px;
+  background: #fff;
 }
 
 .styled-hr {
@@ -130,36 +129,35 @@ body {
   max-width: 600px;
   margin: 0;
   color: #333;
-
 }
 
 /* Animation */
 @keyframes fadeIn {
   from {
-      opacity: 0;
-      transform: translateY(20px);
+    opacity: 0;
+    transform: translateY(20px);
   }
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero-content h1 {
-      font-size: 2rem;
-      margin-bottom: -10px;
+    font-size: 2rem;
+    margin-bottom: -10px;
   }
 
   .hero-content p {
-      font-size: 1rem;
+    font-size: 1rem;
   }
 
   .hero-image img {
-      width: 120px;
-      height: 120px;
-      margin-right: 80px;
+    width: 120px;
+    height: 120px;
+    margin-right: 80px;
   }
 }
 
@@ -184,15 +182,14 @@ body {
   }
 }
 
-
 /* Skills Section */
 .skills {
-    padding: 3rem 0;
+  padding: 3rem 0;
 }
 
 .skills h2 {
-    text-align: center;
-    font-size: 30px;
+  text-align: center;
+  font-size: 30px;
   font-weight: bold;
   margin-bottom: 50px;
   color: #000000;
@@ -200,9 +197,9 @@ body {
 }
 
 .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
 }
 
 .skills-grid img {
@@ -216,51 +213,51 @@ body {
 }
 
 .skill-card {
-    /* background: #222e49; */
-    background: linear-gradient(145deg, #2d2d31, #1a1a1d);
-    padding: 1.5rem;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+  /* background: #222e49; */
+  background: linear-gradient(145deg, #2d2d31, #1a1a1d);
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
 }
 
 .skill-card:hover {
-    transform: scale(1.05);
-    cursor: pointer;
-    box-shadow: 0 0 20px rgba(230, 43, 6, 0.8);
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(230, 43, 6, 0.8);
 }
 
 /* Progress Bar Container */
 .progress-container {
-    width: 100%;
-    background-color: #f3f3f3;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-top: 10px;
+  width: 100%;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 10px;
 }
 
 /* Progress Bar */
 .progress-bar {
-    width: 100%;
-    height: 20px;
-    background-color: blue;
-    text-align: center;
-    line-height: 20px;
-    color: rgb(251, 251, 251);
-    border-radius: 10px;
+  width: 100%;
+  height: 20px;
+  background-color: blue;
+  text-align: center;
+  line-height: 20px;
+  color: rgb(251, 251, 251);
+  border-radius: 10px;
 }
-
 
 /* Skills Section */
 @media (max-width: 768px) {
   .skills h2 {
     font-size: 24px;
-    margin-bottom: 30px;margin-top: 10px;
+    margin-bottom: 30px;
+    margin-top: 10px;
   }
 
   .skills-grid {
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
     display: flex;
     justify-content: space-evenly;
@@ -287,7 +284,7 @@ body {
   }
 
   .skills-grid {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     gap: 1rem;
     display: flex;
     justify-content: space-evenly;
@@ -311,10 +308,9 @@ body {
   }
 
   .progress-bar {
-    height: 15px; 
+    height: 15px;
   }
 }
-
 
 /* Projects Section */
 .projects {
@@ -361,7 +357,6 @@ body {
 .project-card img {
   width: 100%;
   height: 200px;
-  
 }
 
 .project-card h3 {
@@ -375,7 +370,7 @@ body {
   font-size: 16px;
   color: #bdbdbd;
   margin: 10px 0 20px;
-  padding: 20px
+  padding: 20px;
 }
 
 .project-card a {
@@ -402,7 +397,6 @@ body {
 }
 
 @media (max-width: 768px) {
-
   .projects h2 {
     font-size: 26px;
     margin-bottom: 30px;
@@ -416,7 +410,6 @@ body {
   .project-card {
     border-radius: 8px;
     margin-left: 17px;
-   
   }
 
   .project-card img {
@@ -435,14 +428,13 @@ body {
   }
 
   .project-card a {
-    font-size: 14px; 
+    font-size: 14px;
     padding: 8px 14px;
     margin: 5px 8px;
   }
 }
 
 @media (max-width: 480px) {
-  
   .projects h2 {
     font-size: 22px;
     margin-bottom: 20px;
@@ -450,7 +442,7 @@ body {
 
   .projects-grid {
     grid-template-columns: 1fr;
-    gap: 15px; 
+    gap: 15px;
   }
 
   .project-card img {
@@ -468,32 +460,31 @@ body {
   }
 
   .project-card a {
-    font-size: 16px; 
+    font-size: 16px;
     padding: 6px 12px;
     margin: 5px 5px;
     margin-bottom: 30px;
   }
 }
 
-
 /* Achievements Section */
 .achievements {
-    padding: 3rem 0;
+  padding: 3rem 0;
 }
 
 .achievements h2 {
   text-align: center;
   font-size: 30px;
-font-weight: bold;
-margin-bottom: 50px;
-color: #000000;
-letter-spacing: 2px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  color: #000000;
+  letter-spacing: 2px;
 }
 
 .achievements ul {
-    list-style: disc inside;
-    max-width: 600px;
-    margin: 0 auto;
+  list-style: disc inside;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 /* Premium Certificates Section */
@@ -507,12 +498,11 @@ letter-spacing: 2px;
 .certificates h2 {
   text-align: center;
   font-size: 30px;
-font-weight: bold;
-margin-bottom: 50px;
-color: #000000;
-letter-spacing: 2px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  color: #000000;
+  letter-spacing: 2px;
 }
-
 
 .certificate-grid {
   display: grid;
@@ -570,8 +560,8 @@ letter-spacing: 2px;
 
 @media (max-width: 768px) {
   .certificates h2 {
-      font-size: 24px;
-      margin-top: -60px;
+    font-size: 24px;
+    margin-top: -60px;
   }
 
   .certificate-grid {
@@ -579,16 +569,16 @@ letter-spacing: 2px;
   }
 
   .certificate-card {
-      padding: 10px;
-      width: 160px;
+    padding: 10px;
+    width: 160px;
   }
 
   .certificate-card a {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .certificate-card p {
-      font-size: 15px;
+    font-size: 15px;
   }
 
   /* hero section */
@@ -606,7 +596,7 @@ letter-spacing: 2px;
   }
 
   .hero-image img {
-    width: 160px; 
+    width: 160px;
     height: 160px;
     margin-left: 76px;
   }
@@ -625,7 +615,6 @@ letter-spacing: 2px;
   }
 }
 
-
 /*Achievements Section */
 .achievements {
   padding: 80px 20px;
@@ -637,10 +626,10 @@ letter-spacing: 2px;
 .achievements h2 {
   text-align: center;
   font-size: 30px;
-font-weight: bold;
-margin-bottom: 50px;
-color: #000000;
-letter-spacing: 2px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  color: #000000;
+  letter-spacing: 2px;
 }
 
 .achievements-list {
@@ -676,7 +665,7 @@ letter-spacing: 2px;
 }
 
 .achievements-list li::before {
-  content: '✔';
+  content: "✔";
   margin-right: 10px;
   color: #00ff26;
   font-size: 20px;
@@ -685,13 +674,13 @@ letter-spacing: 2px;
 
 @media (max-width: 768px) {
   .achievements h2 {
-      font-size: 24px;
+    font-size: 24px;
   }
 
   .achievements-list li {
-      font-size: 16px;
-      padding: 10px 20px;
-      width: 90%;
+    font-size: 16px;
+    padding: 10px 20px;
+    width: 90%;
   }
 }
 
@@ -771,27 +760,26 @@ letter-spacing: 2px;
     margin-top: -80px;
   }
   .journey-steps {
-      gap: 20px;
+    gap: 20px;
   }
   .step {
-      flex-direction: column;
-      text-align: center;
-      width: 80%;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
   }
   .circle {
-      margin: 0 0 15px;
+    margin: 0 0 15px;
   }
   .journey-section h2 {
     font-size: 24px;
   }
-  .content h3{
+  .content h3 {
     font-size: 15px;
   }
-  .content p{
+  .content p {
     font-size: 12px;
   }
 }
-
 
 /* timeline and service */
 section {
@@ -811,7 +799,7 @@ section h2 {
 }
 
 section h2::after {
-  content: '';
+  content: "";
   display: block;
   width: 100px;
   height: 3px;
@@ -863,9 +851,9 @@ section h2::after {
 /* Responsive Design */
 @media (max-width: 768px) {
   .timeline-item {
-      width: 80%;
-      gap: 20px;
-      margin-bottom: 20px;
+    width: 80%;
+    gap: 20px;
+    margin-bottom: 20px;
   }
 
   .timeline h2 {
@@ -878,13 +866,13 @@ section h2::after {
   }
 
   .service-card {
-      width: 75%;
+    width: 75%;
   }
-  .service-card h3{
+  .service-card h3 {
     font-size: 20px;
   }
 
-  .service-card p{
+  .service-card p {
     font-size: 15px;
   }
 
@@ -892,7 +880,6 @@ section h2::after {
     font-size: 24px;
   }
 }
-
 
 /*Contact Section */
 .contact {
@@ -905,10 +892,10 @@ section h2::after {
 .contact h2 {
   text-align: center;
   font-size: 30px;
-font-weight: bold;
-margin-bottom: 20px;
-color: #000000;
-letter-spacing: 2px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000000;
+  letter-spacing: 2px;
 }
 
 .contact p {
@@ -944,45 +931,43 @@ letter-spacing: 2px;
 /* Responsive Design */
 @media (max-width: 768px) {
   .contact h2 {
-      font-size: 24px;
-      margin-top: -60px;
+    font-size: 24px;
+    margin-top: -60px;
   }
 
   .contact p {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .contact-btn {
-      font-size: 16px;
-      padding: 12px 30px;
+    font-size: 16px;
+    padding: 12px 30px;
   }
 }
 
-
-
 /* Footer */
 .footer {
-    background: linear-gradient(90deg, #000000, #000000);
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
+  background: linear-gradient(90deg, #000000, #000000);
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
 }
 
 .footer .social-media {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .footer .social-media a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
 .footer .social-media a:hover {
-    color: #f39c12;
+  color: #f39c12;
 }
 
 /* Footer Styling */
@@ -1029,77 +1014,74 @@ footer .container p {
 /* Responsive Design */
 @media (max-width: 768px) {
   .container p {
-      font-size: 10px;
+    font-size: 10px;
   }
 
   .social-media a {
-      width: 25px;
-      height: 25px;
+    width: 25px;
+    height: 25px;
   }
 }
 
-
 #backToTop {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #f39c12;
-    color: #fff;
-    border: none;
-    padding: 0.5rem;
-    border-radius: 20px;
-    cursor: pointer;
-    display: none;
-    transition: background 0.3s;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #f39c12;
+  color: #fff;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+  display: none;
+  transition: background 0.3s;
 }
 
 #backToTop:hover {
-    background: #000000;
+  background: #000000;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-
   #backToTop {
     font-size: 10px;
     right: 10px;
-
   }
-    .navbar .nav-links {
-        display: none;
-        justify-content: flex-start;
-        align-items: start;
-        flex-direction: row;
-        flex-wrap: wrap;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background: #ff8400;
-        width: 100%;
-        font-size: 14px;
-        text-align: left;
-    }
+  .navbar .nav-links {
+    display: none;
+    justify-content: flex-start;
+    align-items: start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ff8400;
+    width: 100%;
+    font-size: 14px;
+    text-align: left;
+  }
 
-    .navbar .nav-links.active {
-        display: flex;
-        padding:40px;
-        text-align: left;
-        background-color: black;
-    }
+  .navbar .nav-links.active {
+    display: flex;
+    padding: 40px;
+    text-align: left;
+    background-color: black;
+  }
 
-    .navbar .hamburger {
-        display: flex;
-    }
+  .navbar .hamburger {
+    display: flex;
+  }
 
-    .nav-links li {
-      background-color: #0013e6;
-      max-width: min-content;
-      padding: 10px;
-      border-radius: 5px;
-    }
-    .nav-links li:hover{
-      cursor: pointer;
-      background-color: gold;
-      color: #000000;
-    }
+  .nav-links li {
+    background-color: #0013e6;
+    max-width: min-content;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .nav-links li:hover {
+    cursor: pointer;
+    background-color: gold;
+    color: #000000;
+  }
 }
